@@ -74,15 +74,17 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
     // MAIN CARD CONTAINER
     // The "group" class enables hover effects on child elements
     // Clicking anywhere on the card triggers the onClick function (opens modal)
+    // pt-0 removes top padding so the image fills to the top of the container
     <Card
-      className="group relative overflow-hidden border-border/50 bg-card transition-all duration-500 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 cursor-pointer"
+      className="group relative overflow-hidden border-border/50 bg-card transition-all duration-500 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 cursor-pointer pt-0 pb-6"
       onClick={onClick}
     >
       {/* CARD CONTENT WRAPPER */}
       <div className="relative overflow-hidden">
         {/* IMAGE SECTION */}
         {/* This displays the project image and handles the hover-to-GIF effect */}
-        <div className="relative aspect-video w-full overflow-hidden bg-transparent">
+        {/* mb-8 adds spacing between the image and the card title below */}
+        <div className="relative aspect-video w-full overflow-hidden bg-transparent mb-8">
           {/* IMAGE CONTAINER WITH HOVER DETECTION - When mouse enters, isHovered becomes true and shows the GIF. When mouse leaves, shows the static image */}
           <div
             className="relative h-full w-full overflow-hidden bg-transparent"

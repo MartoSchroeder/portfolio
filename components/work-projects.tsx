@@ -17,7 +17,7 @@
 import { useState } from "react"
 import { ProjectCard } from "@/components/project-card"
 import { ProjectModal } from "@/components/project-modal"
-import { CompanyLogosBanner } from "@/components/company-logos-banner"
+import { WorkLogosBanner } from "@/components/work-logos-banner"
 import { Briefcase, Sparkles } from "lucide-react"
 
 // ============================================================================
@@ -214,10 +214,10 @@ export function WorkProjects() {
           </div>
         </div>
 
-        {/* COMPANY LOGOS BANNER */}
+        {/* WORK LOGOS BANNER */}
         {/* This displays a scrolling banner of company logos */}
-        {/* To modify the logos, see company-logos-banner.tsx component */}
-        <CompanyLogosBanner />
+        {/* To modify the logos, see work-logos-banner.tsx component */}
+        <WorkLogosBanner />
 
         {/* PROJECTS GRID */}
         {/* This creates a responsive grid that shows all your projects */}

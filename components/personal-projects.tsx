@@ -18,6 +18,7 @@
 import { useState } from "react"
 import { ProjectCard } from "@/components/project-card"
 import { ProjectModal } from "@/components/project-modal"
+import { PersonalLogosBanner } from "@/components/personal-logos-banner"
 import { Gamepad2, Sparkles } from "lucide-react"
 
 // ============================================================================
@@ -198,10 +199,17 @@ export function PersonalProjects() {
               <Sparkles className="h-4 w-4 text-primary animate-pulse" style={{ animationDelay: "0.5s" }} />
             </div>
           </div>
+        </div>
 
-          {/* PROJECTS GRID */}
-          {/* This creates a responsive grid that shows all your personal projects */}
-          {/* The grid automatically adjusts: 1 column on mobile, 2 on tablet, 3 on desktop */}
+        {/* PERSONAL PROJECTS LOGOS BANNER */}
+        {/* This displays a scrolling banner of logos for personal projects */}
+        {/* To modify the logos, see personal-logos-banner.tsx component */}
+        <PersonalLogosBanner />
+
+        {/* PROJECTS GRID */}
+        {/* This creates a responsive grid that shows all your personal projects */}
+        {/* The grid automatically adjusts: 1 column on mobile, 2 on tablet, 3 on desktop */}
+        <div className="container relative mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* MAP THROUGH PROJECTS */}
             {/* This automatically creates a card for each project in the personalProjects array */}

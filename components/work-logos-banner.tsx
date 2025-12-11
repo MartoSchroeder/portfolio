@@ -1,9 +1,9 @@
 "use client"
 
 // ============================================================================
-// COMPANY LOGOS BANNER COMPONENT
+// WORK LOGOS BANNER COMPONENT
 // ============================================================================
-// This component displays a scrolling banner of company logos.
+// This component displays a scrolling banner of company logos for professional work.
 // The logos scroll continuously from right to left in an infinite loop.
 //
 // TO MODIFY COMPANY LOGOS:
@@ -14,7 +14,7 @@
 // - To remove a company: Delete its object from the array
 // ============================================================================
 
-export function CompanyLogosBanner() {
+export function WorkLogosBanner() {
   // ============================================================================
   // COMPANY DATA ARRAY
   // ============================================================================

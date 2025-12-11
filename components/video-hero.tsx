@@ -84,7 +84,7 @@ export function VideoHero() {
               <Sparkles className="h-4 w-4" />
             </div>
             {/* YOUR NAME - EDIT THIS */}
-            <h1 className="text-balance text-6xl font-bold tracking-tight md:text-7xl lg:text-8xl bg-gradient-to-r from-foreground via-primary to-secondary bg-clip-text text-transparent">
+            <h1 className="text-balance text-6xl font-bold tracking-tight md:text-7xl lg:text-8xl text-foreground">
               Martin Schroeder
             </h1>
             {/* MAIN TAGLINE - EDIT THIS DESCRIPTION */}
@@ -103,20 +103,20 @@ export function VideoHero() {
             <Button
               size="lg"
               onClick={scrollToWork}
-              className="gap-2 bg-primary text-lg hover:shadow-2xl hover:shadow-primary/50 transition-all duration-300 hover:scale-105 group"
+              className="gap-2 bg-primary text-lg border-2 border-white hover:shadow-2xl hover:shadow-primary/50 transition-all duration-300 hover:scale-105 group px-8 py-6"
             >
               <span>View My Work</span>
-              <ArrowDown className="h-5 w-5 group-hover:translate-y-1 transition-transform" />
+              <ArrowDown className="h-6 w-6 group-hover:translate-y-1 transition-transform" />
             </Button>
             {/* GET IN TOUCH BUTTON - EDIT THE EMAIL ADDRESS HERE */}
             <Button
               variant="outline"
               size="lg"
-              className="gap-2 border-primary/50 bg-background/50 backdrop-blur-sm hover:bg-background/80 hover:border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300"
+              className="gap-2 border-2 border-white bg-background/50 backdrop-blur-sm hover:bg-background/80 hover:border-white hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 px-8 py-6"
               asChild
             >
               <a href="mailto:martin@example.com">
-                <Mail className="h-5 w-5" />
+                <Mail className="h-6 w-6" />
                 Get in Touch
               </a>
             </Button>
